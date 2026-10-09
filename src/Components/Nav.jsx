@@ -1,12 +1,8 @@
 import React from 'react';
+import LinksAll from './LinksAll';
+
 
 const Nav = () => {
-    const links = <>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/service">Service</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </>
     return (
         <div className="navbar  shadow-sm p-4 items-center">
             <div className="navbar-start">
@@ -17,14 +13,14 @@ const Nav = () => {
                     <ul
                         tabIndex={-1}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                       {links}
+                    <LinksAll></LinksAll>
                     </ul>
                 </div>
                 <a className="btn btn-ghost text-xl">care.xyz</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    {links}
+                    <LinksAll></LinksAll>
                 </ul>
             </div>
             <div className="navbar-end">

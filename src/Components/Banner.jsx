@@ -20,7 +20,7 @@ const Banner = () => {
             <div className="container mx-auto px-4">
 
                 {/* ================= HERO CONTENT ================= */}
-                <div className="mx-auto max-w-5xl text-center">
+                <div className=" text-center">
 
                     <motion.span
                         initial={{ opacity: 0, y: 20 }}
